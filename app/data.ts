@@ -182,9 +182,9 @@ export const features = [
   },
   {
     icon: Users,
-    title: "Communities & Servers",
+    title: "Communities & Spaces",
     description:
-      "Create and join communities. Organize with channels, roles, and permissions.",
+      "Create and join communities. Organize with rooms, roles, and permissions.",
   },
   {
     icon: Video,
@@ -196,7 +196,7 @@ export const features = [
     icon: Folder,
     title: "File Sharing",
     description:
-      "Share files of any size securely. No arbitrary limits on what you can send.",
+      "Share files securely without restrictions. Send whatever you need with no arbitrary limits.",
   },
   {
     icon: Lock,
@@ -208,7 +208,7 @@ export const features = [
     icon: Server,
     title: "Self-Hostable",
     description:
-      "Run your own instance with full control. Federation support coming soon.",
+      "Run your own instance with full control, isolated from our main instance.",
   },
   {
     icon: Zap,
