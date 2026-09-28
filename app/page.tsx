@@ -63,7 +63,7 @@ export default function Home() {
                 size="lg"
                 variant="outline"
                 className="gap-2 rounded-full px-8 bg-transparent border-border text-foreground hover:bg-muted"
-                onClick={() => router.push("https://alpha.strafechat.dev")}
+                onClick={() => router.push("https://app.strafe.chat")}
               >
                 <Globe className="size-4" />
                 Open Web
