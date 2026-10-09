@@ -5,6 +5,7 @@ import { Footer } from "@/app/components/footer";
 import { Button } from "@/app/components/ui/button";
 import { AppPreview } from "@/app/components/app-preview";
 import { FeaturesSection } from "@/app/components/features-section";
+import { DownloadSection } from "@/app/components/download-section";
 import { OpenSourceSection } from "@/app/components/open-source-section";
 import { LegalSection } from "@/app/components/legal-section";
 import { Download, Globe } from "lucide-react";
@@ -98,6 +99,7 @@ export default function Home() {
         </section>
 
         <FeaturesSection />
+        <DownloadSection />
         <OpenSourceSection />
         <LegalSection />
 
