@@ -20,6 +20,8 @@ export interface DownloadKind {
 
 export interface PlatformInfo {
   name: string;
+  /** A line under the platform's name on the download page, when there is something to say. */
+  note?: string;
   /** The first one is what a plain "Download for X" button gives. */
   downloads: DownloadKind[];
 }
@@ -41,10 +43,11 @@ export const PLATFORMS: Record<Platform, PlatformInfo> = {
   },
   linux: {
     name: "Linux",
+    note: "Voice, video and screen sharing, end-to-end encrypted",
     downloads: [
-      { label: "AppImage", hint: "any distribution, nothing to install (.AppImage)", match: /\.AppImage$/i },
-      { label: "Debian / Ubuntu", hint: ".deb package", match: /\.deb$/i },
-      { label: "Fedora / openSUSE", hint: ".rpm package", match: /\.rpm$/i },
+      { label: "AppImage", hint: "any 64-bit distribution, nothing to install (.AppImage)", match: /\.AppImage$/i },
+      { label: "Debian / Ubuntu", hint: "Debian, Ubuntu, Mint and relatives (.deb)", match: /\.deb$/i },
+      { label: "Fedora / openSUSE", hint: "Fedora, openSUSE, RHEL and relatives (.rpm)", match: /\.rpm$/i },
     ],
   },
 };

@@ -128,6 +128,7 @@ export default function DownloadPage() {
                     {current && <p className="text-xs text-primary">Your computer</p>}
                   </div>
                 </div>
+                {info.note && <p className="-mt-2 mb-4 text-sm text-muted-foreground text-pretty">{info.note}</p>}
                 <ul className="space-y-2">
                   {info.downloads.map((kind) => {
                     const asset = assetFor(release, kind);
@@ -169,8 +170,9 @@ export default function DownloadPage() {
           </p>
           <p>On a phone or tablet, Strafe runs in your browser: open {WEB_APP_URL.replace("https://", "")} and sign in.</p>
           <p>
-            Voice and video calls are not available in the Linux app yet (its web view ships without
-            WebRTC); use the web app in a browser for calls on Linux.
+            The Linux app runs on Chromium, so voice, video and screen sharing work there just as on
+            Windows and macOS, end-to-end encrypted. Coming from version 1.3 or earlier? It updates
+            itself; afterwards, enter your recovery code once to unlock your encrypted message history.
           </p>
         </div>
       </div>
