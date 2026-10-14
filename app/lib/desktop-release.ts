@@ -36,6 +36,8 @@ export const PLATFORMS: Record<Platform, PlatformInfo> = {
   },
   mac: {
     name: "macOS",
+    // Releases are signed ad hoc, not notarized, so Gatekeeper wants one approval (desktop#1).
+    note: "First launch: open Strafe, then click Open Anyway in System Settings → Privacy & Security. It is not notarized by Apple yet.",
     downloads: [
       { label: "Apple Silicon", hint: "M1 and newer (.dmg)", match: /_aarch64\.dmg$/i },
       { label: "Intel", hint: "Intel Macs (.dmg)", match: /_x64\.dmg$/i },
