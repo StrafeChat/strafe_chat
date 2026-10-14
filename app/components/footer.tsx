@@ -4,7 +4,7 @@ import { Github, Twitter } from "lucide-react";
 
 const footerLinks = {
   Product: ["Features", "Download", "Changelog", "Discord"],
-  Resources: ["Documentation", "API Reference", "Community", "Blog"],
+  Resources: ["Documentation", "API Reference", "Community"],
   Legal: ["Privacy Policy", "Terms of Service", "Acceptable Use"],
 };
 
@@ -15,6 +15,11 @@ const legalPaths: Record<string, string> = {
   Download: "/download",
   Discord: "https://discord.gg/XPyjQXaXKG",
   Features: "#features",
+  // The developer docs are served by the web client on every instance, at /docs/.
+  Documentation: "https://app.strafe.chat/docs/",
+  "API Reference": "https://app.strafe.chat/docs/rest/",
+  // The Strafe community space, on Strafe itself.
+  Community: "https://app.strafe.chat/invite/ePOILtxn",
 };
 
 export function Footer() {
