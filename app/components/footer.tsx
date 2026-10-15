@@ -130,7 +130,7 @@ export function Footer() {
           </p>
           <div className="flex items-center gap-4 text-sm text-muted-foreground">
             <span>
-              Made with{" "}
+              Designed with{" "}
               <Image
                 src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f95e.svg"
                 alt="pancake"
